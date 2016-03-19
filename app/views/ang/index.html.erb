@@ -1,0 +1,19 @@
+<head>
+	<h1> task viewer </h1>
+</head>
+
+<body>
+	<% @tasklist.each_with_index do |t| %>
+		<p> <%=t.task%> </p>
+		<p> <%=t.due%> </p>
+	<% end %>
+	
+	<form action="/ang/enroll">
+		<textarea name="irum" placeholder="task"></textarea><br>
+		<textarea name="nalzza" placeholder="due"></textarea><br>
+		<input type="submit">
+	</form>
+
+	<a href="/models/sign_out"> Sign out </a>
+
+</body>
