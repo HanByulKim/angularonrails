@@ -8,6 +8,8 @@ source 'https://rubygems.org'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 #user
 gem 'devise'
+#bower with nodejs npm
+gem 'bower-rails'
 
 gem 'rails', '~> 4.2.0'
 
